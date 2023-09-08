@@ -1,0 +1,11 @@
+ALTER TABLE pop ALTER COLUMN "year" TYPE INTEGER USING "year"::INTEGER;
+ALTER TABLE pop ALTER COLUMN "Total Population" TYPE BIGINT USING REPLACE("Total Population", ',', '')::BIGINT;
+ALTER TABLE pop ALTER COLUMN "Urban Population" TYPE BIGINT USING REPLACE("Urban Population", ',', '')::BIGINT;
+ALTER TABLE pop ALTER COLUMN "Rural Population" TYPE BIGINT USING REPLACE("Rural Population", ',', '')::BIGINT;
+ALTER TABLE pop ALTER COLUMN "Population Density" TYPE REAL USING REPLACE("Population Density", ',', '')::REAL;
+ALTER TABLE pop ALTER COLUMN "Life Expectancy" TYPE REAL USING REPLACE("Life Expectancy", ',', '')::REAL;
+ALTER TABLE pop ALTER COLUMN "Birth Rate" TYPE REAL USING REPLACE("Birth Rate", ',', '')::REAL;
+ALTER TABLE pop ALTER COLUMN "Death Rate" TYPE REAL USING REPLACE("Death Rate", ',', '')::REAL;
+ALTER TABLE pop ALTER COLUMN "Fertility Rate" TYPE REAL USING REPLACE("Fertility Rate", ',', '')::REAL;
+ALTER TABLE pop ALTER COLUMN "Infant Mortality Rate" TYPE REAL USING REPLACE("Infant Mortality Rate", ',', '')::REAL;
+ALTER TABLE pop ALTER COLUMN "Growth Rate" TYPE REAL USING REPLACE("Growth Rate", ',', '')::REAL;
