@@ -1,4 +1,4 @@
-Mid-Term Project- Global Population Trends:
+# Global Population Trends:
 Project/Goals
 Global Population Trends Data from  2016 - 2022 in which we did a analysis on the few parameters like Urban and rural population, infant mortality rate, birth and death rate, life expectancy, etc. In order to analyze and compare population trends and explore the fascinating world of demographics and population trends across different countries.
 
